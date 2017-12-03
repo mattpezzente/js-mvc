@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.main-form, .main-form .group, .main-form button, .content {
+  margin-left: auto;
+  margin-right: auto; }
+
+legend, label, button, p, h1, h2, h3, input, th, td {
+  font-family: 'Montserrat', sans-serif;
+  color: #eee; }
+
+input, select {
+  font-family: 'Montserrat', sans-serif;
+  color: #111; }
+
+body {
+  background: #111;
+  padding: 1rem; }
+
+h1 {
+  font-size: 1.5rem; }
+
+th {
+  font-size: 1.125rem; }
+
+.main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #333;
+  max-width: 400px; }
+  .main-form legend {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .main-form .group {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 2px solid #999;
+    border-radius: 5px; }
+  .main-form label {
+    display: inline-block;
+    margin-right: 0.9rem;
+    text-align: left;
+    width: calc(20% - 0.5rem); }
+  .main-form input {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: calc(75% - 0.5rem);
+    font-size: 0.75rem; }
+  .main-form select {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: calc(75% - 0.5rem);
+    font-size: 0.75rem; }
+  .main-form .lbl-computer-type {
+    width: calc(40% - 0.5rem); }
+  .main-form .txt-computer-type {
+    width: calc(60% - 0.5rem); }
+  .main-form button {
+    display: block;
+    background: #206ec6;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    color: #eee;
+    font-size: 0.825rem;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .main-form button:hover {
+      background: #237be2; }
+    .main-form button:active {
+      background: #1d63b4; }
+
+.content {
+  background: #333;
+  padding: 1rem;
+  max-width: 800px; }
+
+.zoo-table {
+  width: 100%;
+  margin-top: 1rem; }
+  .zoo-table thead {
+    background: #111; }
+  .zoo-table tr {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer; }
+    .zoo-table tr:hover {
+      background: #111; }
+  .zoo-table td {
+    border-bottom: 2px solid #111; }
+  .zoo-table td, .zoo-table th {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+    width: calc(100%/6); }
