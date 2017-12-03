@@ -1,1 +1,1 @@
-# JavaScript Classes Excersizes
+# JavaScript Classes Excercizes
