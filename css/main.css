@@ -94,6 +94,10 @@ th {
     margin-bottom: 1rem;
     width: calc(75% - 0.5rem);
     font-size: 0.75rem; }
+  .main-form .lbl-weight {
+    width: calc(30% - 0.5rem); }
+  .main-form .txt-weight {
+    width: calc(65% - 0.5rem); }
   .main-form select {
     display: inline-block;
     margin-bottom: 1rem;
