@@ -128,12 +128,6 @@ th {
   margin-top: 1rem; }
   .zoo-table thead {
     background: #111; }
-  .zoo-table tr {
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    cursor: pointer; }
-    .zoo-table tr:hover {
-      background: #111; }
   .zoo-table td {
     border-bottom: 2px solid #111; }
   .zoo-table td, .zoo-table th {
