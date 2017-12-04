@@ -27,13 +27,13 @@
         </select>
         <label>Name: </label>
         <input class="txt-name" type="text" data-zoo="animal" />      
-        <label>Weight (KG): </label>
-        <input class="txt-weight" type="text" data-zoo="animal" />
-        <button class="btn-add" type="submit">Add</button>
+        <label>Weight (kg): </label>
+        <input class="txt-weight" type="number" data-zoo="animal" />
+        <button class="btn-add" type="submit">Add Animal</button>
       </div>
       <div class="group">
         <label>Zoo: </label><input class="txt-zoo" type="text" data-zoo="zoo" value="Central Park Zoo" />
-        <button class="btn-update" type="submit">Display Zoo</button>
+        <button class="btn-update" type="submit">Update Zoo</button>
       </div>
     </form>
   </main>
@@ -45,7 +45,7 @@
           <th>Name</th>
           <th>ID</th>
           <th>Species</th>
-          <th>Weight</th>
+          <th>Weight (kg)</th>
           <th>Zoo</th>
         </tr>
       </thead>
@@ -57,6 +57,7 @@
   </footer>
   <script type="text/javascript" src="js/utils.js"></script>
   <script type="text/javascript" src="js/classes.js"></script>
+  <script type="text/javascript" src="js/mvc.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
