@@ -1,5 +1,4 @@
-//Static Property - Line 69
-
+// Data Object Class to transport animal objects through the MVC
 class AnimalDO {
 	constructor() {
 		this.name = ''
@@ -10,13 +9,16 @@ class AnimalDO {
 	}
 }
 
+//Controller Class which is also a Singleton (Instantiated in main.js)
 class Controller {
 	constructor() {
-		console.log('Controller Loaded')
+		//Build the Model, View and Animal Data Object
 		this.model = new Model()
 		this.view = new View()
 		this.animalDO = new AnimalDO()
+		//Set the initial Static property of Zoo to the input value
 		Zoo.zoo = document.querySelector('.txt-zoo').value
+		//Adding event listeners to the buttons
 		document.querySelector('.btn-add').addEventListener('click', this.onClickAdd.bind(this))
 		document.querySelector('.btn-update').addEventListener('click', this.onClickUpdate.bind(this))
 	}
@@ -27,7 +29,7 @@ class Controller {
 		this.animalDO.name = document.querySelector('.txt-name').value
 		this.animalDO.weight = document.querySelector('.txt-weight').value
 		this.animalDO.zoo = Zoo.zoo
-		let evt = new Event("doneCollectingAnimals")
+		let evt = new Event('doneCollectingAnimals')
 		evt.data = this.animalDO
 		document.dispatchEvent(evt)
 	}
@@ -45,11 +47,12 @@ class Controller {
 			return Controller._instance
 		}
 		else {
-			throw "Error, cannot instantiate another singleton"
+			throw 'Error, cannot instantiate another singleton'
 		}
 	}
 }
 
+//Model Class that edits and formats the data to send to the View
 class Model {
 	constructor() {
 		console.log('Model Loaded')
@@ -60,18 +63,19 @@ class Model {
 	formatAnimals(e) {
 		e.data.id = Utils.idGenerator(1, 10000)
 		e.data.species = Utils.animalSelector()
-		let evt = new Event("doneFormattingAnimals")
+		let evt = new Event('doneFormattingAnimals')
 		evt.data  = e.data
 		document.dispatchEvent(evt)
 	}
 
 	formatZoo(e) {
 		Zoo.zoo = e.data
-		let evt = new Event("doneConvertingZoo")
+		let evt = new Event('doneConvertingZoo')
 		document.dispatchEvent(evt)
 	}
 }
 
+//View Class that recieves and displays data
 class View {
 	constructor() {
 		console.log('View Loaded')
